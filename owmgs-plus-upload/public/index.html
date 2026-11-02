@@ -183,6 +183,7 @@ header.top.open .menu-btn span:nth-child(3){top:21.5px;transform:rotate(-45deg)}
 .res{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px}
 .res h3{font-size:18px}
 .res p{font-size:14.5px;color:var(--muted)}
+.res-contact{display:flex;flex-wrap:wrap;gap:12px}
 .res .subj{display:flex;flex-wrap:wrap;gap:6px}
 .res .act{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
 .res .act .btn{font-size:14px;padding:9px 16px}
@@ -501,7 +502,6 @@ a.announce[href]:hover{filter:brightness(1.05)}
       <div class="cta-row">
         <a class="btn btn-orange" href="https://wa.me/233249021637?text=Hello%20OWMGS%2C%20I%20would%20like%20to%20order%20a%20custom%20app." target="_blank" rel="noopener">Order a custom app</a>
         <a class="btn btn-ghost" href="#design">See design services</a>
-        <a class="btn btn-ghost" href="downloads.html"><svg class="ico" aria-hidden="true"><use href="#i-upload"/></svg> Download Live Studio</a>
       </div>
       <div class="stats">
         <div><b>KG – SHS</b>Curriculum coverage</div>
@@ -510,8 +510,8 @@ a.announce[href]:hover{filter:brightness(1.05)}
       </div>
     </div>
     <div class="quick" aria-label="Quick links">
-      <a href="#resources"><span class="qi"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg></span><span class="qt"><b>Scheme of Work</b><small>Basic, JHS and SHS, by subject</small></span><span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
-      <a href="#resources"><span class="qi"><svg class="ico" aria-hidden="true"><use href="#i-notes"/></svg></span><span class="qt"><b>Lesson Notes</b><small>Templates and the notes generator</small></span><span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a href="https://wa.me/233249021637" target="_blank" rel="noopener"><span class="qi"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></span><span class="qt"><b>WhatsApp us</b><small>0249021637</small></span><span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <a href="tel:+233209067004"><span class="qi"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span><span class="qt"><b>Call us</b><small>0249021637 · 0209067004</small></span><span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
       <a href="#news"><span class="qi"><svg class="ico" aria-hidden="true"><use href="#i-news"/></svg></span><span class="qt"><b>Latest GES News</b><small>Circulars, postings, union updates</small></span><span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
     </div>
   </div>
@@ -582,11 +582,14 @@ a.announce[href]:hover{filter:brightness(1.05)}
     <div class="sec-head">
       <p class="eyebrow">Teacher Resource Center</p>
       <h2>Schemes of work, lesson notes and templates</h2>
-      <p class="lede">Pick your level to see what is available. Request any resource on WhatsApp and we send it to you.</p>
+      <p class="lede">Contact us on WhatsApp or by phone and we send you what you need.</p>
     </div>
     <div class="posts placed" id="placed-resources" hidden></div>
-    <div class="levels" role="group" aria-label="Choose level" id="levels"></div>
-    <div class="res-grid" id="resGrid"></div>
+    <div class="res-contact">
+      <a class="btn btn-green" href="https://wa.me/233249021637" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp 0249021637</a>
+      <a class="btn btn-line" href="tel:+233249021637"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg> Call 0249021637</a>
+      <a class="btn btn-line" href="tel:+233209067004"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg> Call 0209067004</a>
+    </div>
   </div>
 </section>
 
@@ -675,7 +678,7 @@ a.announce[href]:hover{filter:brightness(1.05)}
 <footer>
   <div class="wrap foot">
     <div class="brand"><img src="data:image/png;base64,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" alt="" width="40" height="40"><span><b>OWMGS</b><small>Owaacs Wood Media, Graphics &amp; Software</small></span></div>
-    <nav class="foot-links" aria-label="Site"><a href="about.html">About</a><a href="blog.html">Blog &amp; Guides</a><a href="advertise.html">Advertise with us</a><a href="downloads.html">Downloads</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+    <nav class="foot-links" aria-label="Site"><a href="about.html">About</a><a href="blog.html">Blog &amp; Guides</a><a href="advertise.html">Advertise with us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
     <p>© 2026 OWMGS. All rights reserved. Content on this site may not be copied without permission.</p>
   </div>
 </footer>
@@ -782,12 +785,7 @@ appGrid.innerHTML=APPS.map((a,idx)=>`<article class="app" id="app-${a.id||"s"+id
   <div class="app-top"><div class="app-ico">${ICONS[a.i]}</div><div><h3>${a.t}</h3><div class="tags">${a.p.map(x=>`<span class="tag pf">${x}</span>`).join("")}${a.link?`<span class="tag live">Live</span>`:""}</div></div></div>
   <dl><dt>For</dt><dd>${a.u}</dd></dl>
   <ul>${a.f.map(x=>`<li>${x}</li>`).join("")}</ul>
-  <div class="act">
-    ${a.link?`<a class="btn btn-green" target="_blank" rel="noopener" href="${a.link}">Open app ↗</a>`:""}
-    ${a.link&&a.embed?`<button class="btn btn-line" type="button" data-try="${idx}">Try it here</button>`:""}
-    <a class="btn ${a.link?"btn-line":(a.cta==="demo"?"btn-cyan":"btn-orange")}" target="_blank" rel="noopener" href="${WA+encodeURIComponent((a.cta==="demo"?"Hello OWMGS, I would like a demo of the ":"Hello OWMGS, I would like to order the ")+a.t+".")}">${a.link?"Order / ask":(a.cta==="demo"?"Request demo":"Order via WhatsApp")}</a>
-    <a class="btn btn-line" target="_blank" rel="noopener" href="${WA+encodeURIComponent("Hello OWMGS, I want a custom version of the "+a.t+" for my school.")}">Customise</a>
-  </div></article>`).join("");
+</article>`).join("");
 }
 renderApps();
 
@@ -830,8 +828,7 @@ const SHEETS=[
  ["social","Social Media Flyers","1080×1080 · 1080×1920","WhatsApp status, Facebook and Instagram posts."]
 ];
 document.getElementById("sheetGrid").innerHTML=SHEETS.map(s=>`<article class="sheet" data-s="${(s[1]+' '+s[3]+' design print').toLowerCase()}">
-  <div class="mock tile">${ico({poster:"poster",flyer:"flyer",banner:"banner",tshirt:"tshirt",invite:"mail",cert:"certificate",card:"idcard",social:"share"}[s[0]]||"poster")}</div><h3>${s[1]}</h3><span class="size">${s[2]}</span><p>${s[3]}</p>
-  <a target="_blank" rel="noopener" href="${WA+encodeURIComponent("Hello OWMGS, I need a "+s[1].toLowerCase()+" design.")}">Order now →</a></article>`).join("");
+  <div class="mock tile">${ico({poster:"poster",flyer:"flyer",banner:"banner",tshirt:"tshirt",invite:"mail",cert:"certificate",card:"idcard",social:"share"}[s[0]]||"poster")}</div><h3>${s[1]}</h3><span class="size">${s[2]}</span><p>${s[3]}</p></article>`).join("");
 
 // resources
 /* =====================================================================
@@ -862,28 +859,7 @@ const RES={
  "JHS 1–3":{subj:["English","Mathematics","Integrated Science","Social Studies","Career Technology","Computing","Creative Arts & Design","RME","French"]},
  "SHS":{subj:["Core Mathematics","English","Integrated Science","Social Studies","Electives on request"]}
 };
-const levels=Object.keys(RES);let level=levels[1];
-const lv=document.getElementById("levels");
-function norm(x){return String(x||"").toLowerCase().replace(/[–—-]/g,"-").replace(/\s+/g," ").trim();}
-function drawRes(){
-  lv.innerHTML=levels.map(l=>`<button class="chip" aria-pressed="${l===level}" data-l="${l}">${l}</button>`).join("");
-  const s=RES[level].subj;
-  const items=[
-   ["Scheme of Work","Termly schemes for every subject at "+level+", following the current curriculum."],
-   ["Lesson Notes","Weekly lesson notes in the approved format, ready to submit to your head."],
-   ["Teaching Materials","Classroom charts, worksheets, admin forms and record books."]
-  ];
-  document.getElementById("resGrid").innerHTML=items.map(it=>{
-    const links=RESOURCE_LINKS.filter(r=>r&&r.link&&norm(r.level)===norm(level)&&norm(r.type)===norm(it[0]));
-    const list=links.length?`<ul class="dl">${links.map(r=>`<li><a href="${r.link}" target="_blank" rel="noopener"><span>${r.title}</span><b>Open ↗</b></a></li>`).join("")}</ul>`
-                           :`<div class="subj">${s.map(x=>`<span class="tag">${x}</span>`).join("")}</div>`;
-    const app=(it[0]==="Lesson Notes"&&LESSON_APP_LINK)?`<a class="btn btn-green" target="_blank" rel="noopener" href="${LESSON_APP_LINK}">Open Lesson Notes Generator ↗</a>`:"";
-    return `<article class="res" data-s="${(it[0]+' '+level+' '+s.join(' ')+' '+links.map(r=>r.title).join(' ')).toLowerCase()}">
-    <h3>${it[0]}</h3><p>${it[1]}</p>${list}
-    <div class="act">${app}<a class="btn ${links.length||app?"btn-line":"btn-cyan"}" target="_blank" rel="noopener" href="${WA+encodeURIComponent("Hello OWMGS, I need the "+it[0]+" for "+level+".")}">${links.length?"Can't find yours? Ask us":"Request "+it[0]}</a></div></article>`;}).join("");
-}
-lv.addEventListener("click",e=>{const b=e.target.closest("[data-l]");if(b){level=b.dataset.l;drawRes();}});
-drawRes();
+function drawRes(){} /* resource links removed; contacts shown instead */
 
 // news hub
 const NEWS=[
@@ -1235,7 +1211,7 @@ var SITE={};
 let CHAT=[
  {q:"📱 Apps for schools",k:"app, apps, software, report card, quiz, attendance, system, demo, android, apk, computer",a:"We build apps for Ghanaian schools: report card generator, lesson notes app, quiz apps, attendance tracker, staff data system and certificate generator. Tap “Show me” to see them, or ask us for a free demo.",t:"section:apps"},
  {q:"🎨 Posters, flyers & banners",k:"poster, flyer, banner, design, t-shirt, tshirt, shirt, invitation, card, certificate, logo, branding, print, printing, funeral, wedding, church, birthday, sticker",a:"We design posters, flyers, banners, T‑shirts, invitation cards, certificates, ID cards and social media flyers. To order, tell us what it is for, the size, how many copies and the date you need it.",t:"section:design"},
- {q:"📚 Lesson notes & schemes",k:"lesson, notes, scheme, schemes, teacher, resource, resources, kg, basic, jhs, shs, nacca, worksheet, materials",a:"Schemes of work, lesson notes and teaching materials for KG to SHS are in our Teacher Resource Center. Pick your level to see what is ready.",t:"section:resources"},
+ {q:"📚 Lesson notes & schemes",k:"lesson, notes, scheme, schemes, teacher, resource, resources, kg, basic, jhs, shs, nacca, worksheet, materials",a:"For schemes of work, lesson notes and teaching materials, contact us on WhatsApp or call {whatsapp}.",t:"section:resources"},
  {q:"💰 Prices",k:"price, prices, cost, how much, charge, fee, amount, cedis, ghs, ghc, cheap, discount",a:"Prices depend on the item, size, quantity and design work. Tap “Talk to a person” and tell us what you need. We will send you the exact price.",t:""},
  {q:"📰 GES news",k:"news, ges, gnat, nagrat, cct, union, promotion, posting, bece, wassce, free shs, circular",a:"The latest GES updates, teacher union news and education news are on our notice board.",t:"section:news"},
  {q:"📍 Location & hours",k:"where, location, address, office, find, map, hours, open, close, closing, opening, time, today, call, phone, number, email, contact",a:"📍 {location}\n🕘 {hours}\n📞 WhatsApp: {whatsapp}",t:"section:contact"}
