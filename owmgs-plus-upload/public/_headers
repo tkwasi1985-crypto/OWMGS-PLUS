@@ -1,0 +1,12 @@
+# Cloudflare Pages: safety settings added to every page of owmgs.com
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+
+/config.js
+  Cache-Control: public, max-age=300

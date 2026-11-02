@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0e1f3d">
+<title>OWMGS Admin</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: control desk — navy top bar with tabs, one working column: list of items, or the editor for one item. */
+:root{
+  --bg:#f5f7fa; --surface:#ffffff; --ink:#0d1b33; --muted:#53627a; --line:#dbe2ec;
+  --navy:#0e1f3d; --navy-ink:#eef3fb; --cyan:#0aa6d6; --orange:#f07d1a; --green:#3bb273; --red:#d64545;
+  --cyan-soft:#e3f5fb; --orange-soft:#fdeedd; --green-soft:#e2f5ea;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#08111f; --surface:#101c31; --ink:#e8eef8; --muted:#9aaac2; --line:#22324d;
+  --navy:#050c18; --cyan:#3cc3ee; --orange:#ff9a45; --green:#5fd394; --red:#ff7676;
+  --cyan-soft:#0f2b3c; --orange-soft:#33220f; --green-soft:#0f2a1c; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;min-height:100vh}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.15}
+img{max-width:100%}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding-inline:16px}
+
+/* top bar */
+.top{background:var(--navy);color:var(--navy-ink);position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;gap:12px;padding-block:10px}
+.bar img{width:38px;height:38px}
+.bar h1{font-size:18px}
+.bar small{display:block;font-family:var(--body);font-size:12px;font-weight:500;opacity:.7}
+.bar .sp{flex:1}
+.bar a,.bar button{min-height:40px;display:inline-flex;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:var(--navy-ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer}
+.bar a,.bar button{white-space:nowrap}
+@media (max-width:480px){.bar small{display:none}.bar h1{font-size:16px}}
+.tabs{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.tabs button{flex:none;background:none;border:0;color:rgba(238,243,251,.7);padding:10px 16px;min-height:44px;border-radius:999px;font-weight:600;font-size:14.5px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--cyan);color:#021620}
+
+main{padding-block:24px 80px}
+.head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.head h2{font-size:26px;flex:1;min-width:0}
+.help{color:var(--muted);font-size:14.5px;margin:0 0 16px;max-width:70ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:999px;padding:10px 18px;font-weight:700;font-size:14.5px;cursor:pointer;text-decoration:none}
+.btn:disabled{opacity:.55;cursor:wait}
+.btn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.b-main{background:var(--orange);color:#1b0e02}
+.b-cyan{background:var(--cyan);color:#021620}
+.b-line{background:var(--surface);border:1.5px solid var(--line)}
+.b-red{background:transparent;color:var(--red);border:1.5px solid var(--line)}
+.search{width:100%;font-size:16px;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:14px}
+
+/* list */
+.list{display:grid;gap:10px}
+.item{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.thumb{width:64px;height:64px;border-radius:10px;background:var(--bg);border:1px solid var(--line);object-fit:cover;display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:11px;overflow:hidden}
+.item b{display:block;font-size:15.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item .sub{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item .txt{font-size:14px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.chip{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:2px 7px;border-radius:6px;margin-right:6px;vertical-align:1px}
+.c-live{background:var(--green-soft);color:var(--green)}
+.c-hid{background:var(--orange-soft);color:var(--orange)}
+.acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.acts button,.acts a{padding:0 14px;min-height:42px;font-size:14px}
+@media (max-width:620px){
+  .item{grid-template-columns:52px minmax(0,1fr)}
+  .thumb{width:52px;height:52px}
+  .acts{grid-column:1/-1;justify-content:flex-start}
+}
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:32px 20px;text-align:center;color:var(--muted)}
+
+/* editor */
+.editor{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:18px}
+.field{display:grid;gap:6px}
+.field>label,.lbl{font-weight:700;font-size:14px}
+.hint{font-size:12.5px;color:var(--muted)}
+.field input[type=text],.field input[type=url],.field input[type=date],.field input[type=number],.field select,.field textarea,.login input{
+  width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg)}
+.field textarea{min-height:160px;resize:vertical}
+.media{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:520px){.media{grid-template-columns:1fr}}
+.prev{width:100%;aspect-ratio:4/3;border-radius:10px;border:1.5px dashed var(--line);background:var(--bg);display:grid;place-items:center;overflow:hidden;color:var(--muted);font-size:12.5px;text-align:center;padding:6px}
+.prev img{width:100%;height:100%;object-fit:cover}
+.up{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.up input[type=file]{display:none}
+.prog{font-size:13px;color:var(--cyan);font-weight:600}
+.toggle{display:flex;align-items:center;gap:10px;font-weight:600}
+.toggle input{width:22px;height:22px;accent-color:var(--green)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.foot{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.group{border-top:1px solid var(--line);padding-top:16px;display:grid;gap:14px}
+.group h3{font-size:17px}
+
+/* login */
+.login{max-width:380px;margin:12vh auto 0;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;gap:14px;text-align:center}
+.login img{width:84px;margin:0 auto}
+.login h1{font-size:24px}
+.err{color:var(--red);font-size:14px;min-height:1.3em}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;z-index:50;max-width:90vw}
+.done-img{width:100%;max-height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.live{font-size:14px;line-height:1.5}
+.live.ok{color:var(--green)}
+.live.bad{color:var(--orange);font-weight:600}
+@media (max-width:520px){.head h2{flex-basis:100%}.head .btn{flex:1 1 auto}}
+.ico{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.2em;fill:currentColor}
+.tabs button{display:inline-flex;align-items:center;gap:7px}
+.tabs .ico{width:17px;height:17px}
+.btn .ico{width:17px;height:17px}
+.c-bot{background:var(--cyan-soft);color:var(--cyan)}
+.b-ok{background:var(--green);color:#03170b}
+.waiting{background:var(--cyan-soft);border:1px solid var(--cyan);border-radius:12px;padding:12px 14px;font-size:14.5px;margin-bottom:14px}
+.done{background:var(--green-soft);border:1px solid var(--green);border-radius:14px;padding:14px 16px;margin-bottom:16px;display:grid;gap:10px;font-size:15px}
+.warn{background:var(--orange-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:14px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<!-- OWMGS Metro-style icon set -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="i-report" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M5 2h10l5 5v15H5zM14.2 3.6V7.8h4.2zM8 11h9v1.7H8zm0 3.5h9v1.7H8zm0 3.5h6v1.7H8z"/></symbol><symbol id="i-notes" viewBox="0 0 24 24" fill="currentColor"><path d="M14.6 4.6l4.8 4.8L8.6 20.2 3 21l.8-5.6zM16.2 3l1.9-1.9c.5-.5 1.3-.5 1.8 0l3 3c.5.5.5 1.3 0 1.8L21 7.8z"/></symbol><symbol id="i-quiz" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M7.5 1h9A2.5 2.5 0 0 1 19 3.5v17a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 20.5v-17A2.5 2.5 0 0 1 7.5 1zM7 4v15h10V4z"/><path d="M9.6 9a2.4 2.4 0 1 1 3.4 2.2c-.6.3-.9.7-.9 1.3v.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12.1" cy="16" r="1.15"/><rect x="10" y="20.3" width="4" height="1.2" rx=".6"/></symbol><symbol id="i-data" viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 7.6c0 1.7 3.6 3 8 3s8-1.3 8-3v3.6c0 1.7-3.6 3-8 3s-8-1.3-8-3zm0 6.2c0 1.7 3.6 3 8 3s8-1.3 8-3V19c0 1.7-3.6 3-8 3s-8-1.3-8-3z"/></symbol><symbol id="i-attendance" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 5h18v17H3zm2 5v10h14V10z"/><rect x="6" y="2" width="2.6" height="5.5"/><rect x="15.4" y="2" width="2.6" height="5.5"/><path d="M8 15.2l2.7 2.7L16.4 12" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="square"/></symbol><symbol id="i-certificate" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M5 9a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM8.4 9a3.6 3.6 0 1 0 7.2 0a3.6 3.6 0 1 0 -7.2 0z"/><path d="M8.2 14.8L6.3 22l5.7-2.8 5.7 2.8-1.9-7.2a8.4 8.4 0 0 1-7.6 0z"/></symbol><symbol id="i-poster" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 3h18v18H3zm2 2v14h14V5z"/><path d="M5 19l4.8-6.2 3.2 3.8 2.6-3.2L19 19z"/><circle cx="15.5" cy="8.6" r="1.9"/></symbol><symbol id="i-flyer" viewBox="0 0 24 24" fill="currentColor"><path d="M8 2h12v15h-2.2V4.2H8z"/><path fill-rule="evenodd" d="M4 6h12v16H4zM6.4 10h7.2v1.6H6.4zm0 3.2h7.2v1.6H6.4zm0 3.2h4.6V18H6.4z"/></symbol><symbol id="i-banner" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5h20v11H2zM5 7h10v1.9H5zm0 3.3h6.5v1.9H5z"/><rect x="4.5" y="14.5" width="2.2" height="7.5"/><rect x="17.3" y="14.5" width="2.2" height="7.5"/><circle cx="18" cy="9" r="2"/></symbol><symbol id="i-tshirt" viewBox="0 0 24 24" fill="currentColor"><path d="M8.3 2.5L2 5.6l2.6 5.3 1.9-.9V21.5h11V10l1.9.9L22 5.6l-6.3-3.1c-.4 1.6-1.9 2.7-3.7 2.7s-3.3-1.1-3.7-2.7z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2 5h20v14H2zm2 2.2v2.3l8 5.4 8-5.4V7.2l-8 5.4z"/></symbol><symbol id="i-idcard" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2 4.5h20v15H2zM4.6 8.5h6v7.5h-6zm8.4 0h6.5v1.7H13zm0 3.2h6.5v1.7H13zm0 3.2h4.2v1.7H13z"/><path d="M5.8 15.2c.2-1.6 1.1-2.3 1.8-2.3s1.6.7 1.8 2.3z" fill="currentColor" opacity="0"/></symbol><symbol id="i-share" viewBox="0 0 24 24" fill="currentColor"><circle cx="18" cy="5" r="3.2"/><circle cx="6" cy="12" r="3.2"/><circle cx="18" cy="19" r="3.2"/><path d="M8.6 10.6l6.8-4.1M8.6 13.4l6.8 4.1" stroke="currentColor" stroke-width="2.1"/></symbol><symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2 3h20v14H9.5L4 21.5V17H2zm5 7a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M10 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/><path d="M15.3 17.4l2.1-2.1 5.1 5.1-2.1 2.1z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 2.2l3.6 4.4-2 2.6c1.3 2.8 3.5 5 6.4 6.4l2.6-2 4.4 3.6-1.8 4c-.3.7-1.1 1.1-1.9 1C9.5 21.2 2.8 14.5 1.8 6.2c-.1-.8.3-1.6 1-1.9z"/></symbol><symbol id="i-location" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 1.5a7.5 7.5 0 0 1 7.5 7.5c0 5.4-7.5 13.5-7.5 13.5S4.5 14.4 4.5 9A7.5 7.5 0 0 1 12 1.5zm0 4.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6z"/></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.3c3.4-1.3 7-.9 9.6 1v15.2c-2.6-1.8-6.2-2.2-9.6-1zM22.5 4.3c-3.4-1.3-7-.9-9.6 1v15.2c2.6-1.8 6.2-2.2 9.6-1z"/></symbol><symbol id="i-news" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2.5 3.5h15V19a1.8 1.8 0 0 0 1.8 1.8H4.3A1.8 1.8 0 0 1 2.5 19zM5 6.5h10v3.6H5zm0 5.6h4.4v1.6H5zm5.6 0H15v1.6h-4.4zM5 15.4h4.4V17H5zm5.6 0H15V17h-4.4z"/><path d="M18.8 7.5h2.7v11.7a1.35 1.35 0 0 1-2.7 0z"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M3 10.7h12.6L10.2 5.3 12 3.5l8.5 8.5-8.5 8.5-1.8-1.8 5.4-5.4H3z"/></symbol><symbol id="i-down" viewBox="0 0 24 24" fill="currentColor"><path d="M10.7 3v12.6l-5.4-5.4L3.5 12l8.5 8.5 8.5-8.5-1.8-1.8-5.4 5.4V3z"/></symbol><symbol id="i-person" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zM2.5 22c0-5 4.3-8 9.5-8s9.5 3 9.5 8z"/></symbol><symbol id="i-bot" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M4 7.5h16v13H4zm4.5 3.6a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zm7 0a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM8.5 16.6h7v1.7h-7z"/><rect x="11" y="3.4" width="2" height="4.1"/><circle cx="12" cy="2.8" r="1.6"/><rect x="1.5" y="11.5" width="2" height="5"/><rect x="20.5" y="11.5" width="2" height="5"/></symbol><symbol id="i-bell" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.8c.9 0 1.6.7 1.6 1.6v.8a6.5 6.5 0 0 1 4.9 6.3v4.4l2.2 2.6v1.3H3.3v-1.3l2.2-2.6v-4.4a6.5 6.5 0 0 1 4.9-6.3v-.8c0-.9.7-1.6 1.6-1.6zM9.3 20.2h5.4a2.7 2.7 0 0 1-5.4 0z"/></symbol><symbol id="i-send" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21.5L23 12 2 2.5v7.4L16.5 12 2 14.1z"/></symbol><symbol id="i-close" viewBox="0 0 24 24" fill="currentColor"><path d="M5.4 3.6L12 10.2l6.6-6.6 1.8 1.8-6.6 6.6 6.6 6.6-1.8 1.8-6.6-6.6-6.6 6.6-1.8-1.8 6.6-6.6-6.6-6.6z"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 12.5l2-2 5 5 10-10 2 2-12 12z"/></symbol><symbol id="i-copy" viewBox="0 0 24 24" fill="currentColor"><path d="M8 2h13v13h-2.3V4.3H8z"/><path fill-rule="evenodd" d="M3 7h13v15H3zm2.3 2.3v10.4h8.4V9.3z"/></symbol><symbol id="i-link" viewBox="0 0 24 24" fill="currentColor"><path d="M10.6 13.4a4.2 4.2 0 0 0 6 .1l3.6-3.6a4.2 4.2 0 0 0-6-6l-1.7 1.7 1.7 1.7 1.7-1.7a1.8 1.8 0 0 1 2.6 2.6l-3.6 3.6a1.8 1.8 0 0 1-2.6 0z"/><path d="M13.4 10.6a4.2 4.2 0 0 0-6-.1l-3.6 3.6a4.2 4.2 0 0 0 6 6l1.7-1.7-1.7-1.7-1.7 1.7a1.8 1.8 0 0 1-2.6-2.6l3.6-3.6a1.8 1.8 0 0 1 2.6 0z"/></symbol><symbol id="i-grid" viewBox="0 0 24 24" fill="currentColor"><rect x="2.5" y="2.5" width="8.5" height="8.5"/><rect x="13" y="2.5" width="8.5" height="8.5"/><rect x="2.5" y="13" width="8.5" height="8.5"/><rect x="13" y="13" width="8.5" height="8.5"/></symbol><symbol id="i-gear" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M10.4 1.8h3.2l.6 2.7 1.8.8 2.4-1.5 2.2 2.2-1.5 2.4.8 1.8 2.7.6v3.2l-2.7.6-.8 1.8 1.5 2.4-2.2 2.2-2.4-1.5-1.8.8-.6 2.7h-3.2l-.6-2.7-1.8-.8-2.4 1.5-2.2-2.2 1.5-2.4-.8-1.8-2.7-.6v-3.2l2.7-.6.8-1.8-1.5-2.4 2.2-2.2 2.4 1.5 1.8-.8zM12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2z"/></symbol><symbol id="i-comment" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M2 3h20v13h-8l-5 5v-5H2zm4 3.6h12v1.8H6zm0 3.6h8v1.8H6z"/></symbol><symbol id="i-upload" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8 16V6.4L7 10.2 5.3 8.5 12 1.8l6.7 6.7-1.7 1.7-3.8-3.8V16zM3 14h2.4v5.6h13.2V14H21v8H3z"/></symbol><symbol id="i-money" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M1.5 5.5h21v13h-21zM12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8zM4 8v2.2h2.2V8zm13.8 5.8V16H20v-2.2z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 4.5c5 0 9 3.8 10.5 7.5C21 15.7 17 19.5 12 19.5S3 15.7 1.5 12C3 8.3 7 4.5 12 4.5zm0 3.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></symbol><symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5a10.4 10.4 0 0 0-9 15.7L1.6 22.5l5.4-1.4A10.4 10.4 0 1 0 12 1.5zm0 18.9c-1.6 0-3.2-.4-4.6-1.3l-.3-.2-3.2.8.9-3.1-.2-.3A8.5 8.5 0 1 1 12 20.4zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a7 7 0 0 1-3.4-3c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 3.9c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol></svg>
+
+<!-- ===================== LOGIN ===================== -->
+<form class="login" id="loginForm">
+  <img src="data:image/png;base64,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" alt="OWMGS logo">
+  <h1>OWMGS Admin</h1>
+  <p class="hint">Sign in to update your website.</p>
+  <input type="password" id="pw" placeholder="Admin password" autocomplete="current-password" aria-label="Admin password">
+  <button class="btn b-main" type="submit" id="loginBtn">Sign in</button>
+  <p class="err" id="loginErr" aria-live="polite"></p>
+</form>
+
+<!-- ===================== APP ===================== -->
+<div id="app" hidden>
+  <header class="top">
+    <div class="wrap">
+      <div class="bar">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAYAAADnRuK4AAARPElEQVR42u2deVyU1RrHn3cYBmFAdhk0IDXT9EqZBBYt1s3CS2oGQq6fStQszVIzl0xNuZW3vKXlrt3cAYVcMMpuy01acUNFk643ZJlhBoYBGQaGWe4f44wzMsu7b5zf58NH551zzvu+53zneZ5z3nPOC4CEhISEhISEhISEREhYd6+AhIJldbLo0FhP3wf6T/OY19igVF4eN6w3AqgbqN+XuUa/AH9/ovm8AeRJlg6j8cJj8QEIIAFrwHdrrXSUQwYgdypPVWAIoG4CDRMAiRUmDEHDPkBigkkixIsOGZM8a8B3a61Mw8OGEktV1sRSlTVs7JSZyAIJ3NpwYYGEbpUwBA7/ABISSLy+wH7HV+v9ggKC2DiXJvuAFcMwXPVhtVqt8YXHWak7U1tLa8WoO0MQQDywOp1NbW3Ns48yCmTMjt0GWVhEYHexRpiYwTEZjJ2654v8ubwfxZ6Dnf6Bgf5iBYk3FyMfOTSr98qpeVTLaSk8fdmYXzmIj79WeXb21Yisaf2ollP15oys5m+PFiCAaLQ6Dc/mgZAUd6hYFNYIEzI87eeqa1vf+bEPCFjhS5fXBw8fESNUiDg7edxnC670SIgZQCZvc/7p2s7CSkGD08W9ZU5QRUx8TkEmb9v/Kn//Y8pDg7oNQGStjlHd0tryyhfBIGL12ri9LSAmllRPkQtrhAkFHqHFOFzFSGxDhPEdHnXWfqtEIum2E9/IgMQmRBif4eluVkeIEGF8hEedtc8skfj5IXRuymI1mxMKS/z4BhHGN3iQ1aHXGjENkQTBIyxVZ6QTSp9YqrIKEiAi8LSfr1EheIhB1Hb2lIYPEGFcw6OefEAnMWNhCAviMvtJW27PP9yTS3eGcQpPN++icxEX0Q0RrS4sbtfCy0TiHQQP+3HRgD0/XOItQD3iew3Ea3lQs9OrqvGjcdVpYN8Bg3gJEF7XpZ6yvwlZHgZ6QxIJdi17XDPbQbWETXgM52rqJSZJOGpuhnpEJlOovvx0PZsQUQYo6JGhWXjT6t8pjUHNzKy0q5bjruOQkekZnPfC8FofOsd5bjt4DHAuoBCM2isugGb5G6z3zKj2yjChwUPHVFCx9Kj4ABHjANH5YNReIe0XykGzYomowHFubLogsljM5oQi3w9gqQAkYRIeW++AXnjq5s4SHTx2aKxmM61WFm/dUwmoSQHU7/hqPduuyy5zXY1o3VdN1ljOXOLgE5WtrAGEZ7kxGiwUVlwlDQqRkylbypzrYm+wkInAujojHVTzGkBG87Q2qxUg8p9RvAQtsVRlJRoPMTKdg82pGUz1yrTz6YcHAADDbGULuXdHGiA81qdT1axnq1JkAwbSWp7xz6ugeu1lUM6dCRt+6yE6V9ahVPpsG6IBtZTui2x+tUQupEr19MtcURcMK364uQStcnYjRAYKO6xTz8mR022xcVugkDEps3ylack/XSskcNzB83pKG6x+pBV6Blhcre+mSIhYR3/sEneomNXB0aa8XT7bKGzM5Bm0WyDFgozNPl2AAJYbm7RaUM6Y6vj870k6GKYwdUn38vB2l892eOz/chHH0KHW/Lw+4dned12LX/zBVt3RvdtYdWGG01VKAIjlc+U15++Dlry9AADgL7FC/auNju9OVkthbEGYS/qoQDNcmd3kAMZgAuiz/iZIgoXozK+q4GHJCjrKwuXC8ATP+rU/x/K94uzw1M9rcMATsS4KItZFdYEHAKDB4Of4HgAgUOpqeZhwaay4sTWrfMKDN5gW5Da/VILl32c1gr8fcQAi1kVBkwEE7b4478Z7Et+X5DgHy9FyK2nr0X9TFDTfCI1q5zYI2grRNS7kEyAxbOZtl91yUGn0vhtvuDOnXQ8b2sRpXfC4McoW6HrR6d+F9EsbsoX6jNpbe2J3bhZoLFR0gHLbUQaoI69yoBAqy97YSj3as8HRG9uzeyCjAInJfRGVrymzAzd1j7UBvtwYJQtkMhg7hVQZS77Ft3OcVlkGVqv3347GYLNkITLbiPWGMmE+OzN1tJk4c2Fcb+JNVNvOet5APjvjb25B8qVFI2wR9O7yQEECpJw0QcoZQEKTv4e7vXS2BPIOHbf1sm6Pg4jYJFuwHJsEEeFhXkFqNtpcXYC0e3p7jwD1/Sq3Q2w3e2a61u3xu+5Jc0By6qciFwukbdI5gHKn93+2TT7YlHZdtJAM/ubPdsIASWX+Mm+FdjbpBTf6oQj2bCXcQeINnCOZOpfPf+llFiwgnc26dm/fSwN6BNDuwppnHwsS46/NGzTOejDeJJp7Vr0wmXQPQPQxUM+Jtqkb9sG/mrn0Pcc6V4/GlEQPUGjmsy6fg2joN9oHJR/dG+7yGQEkVt0YFKRjMpg9b8yHkYDkAaCEgmW1YrrJuIPHbsY4FCCy5zGZATotWLeyPoM+P1OHGyBZdGhvsVWA87xjZ4hqX/ENgEJudoDS0IZBr49s+StmNoqmfixms9eBLFl0rNsJg6RGIYm8oJZvENmfztunpDrPMtToARK3R4LJAjBrmAHWjHQdqXCeBrIwRe91WEBoqs0ai5GZ3E8KIEzAm/PcCpGzG4qWAyjndbUqEesiwXkjk8bXGgBDm/SRB0gM7qw68ynbOmMgNsGM7pindvpU6LN9FwJIqIF186E8aNm3i3VwHLGHTmuDGQEkTIVmZENoRnaX4+dKU5B/ItuNF4qMlb+jFuSjBQr0n+YjG39WYVRnpDOyNDhiXRRcnNkIsQz0tPi6ksOX1cXE6sKY2rpkyFY02ixqF4aEACLVBRer/BSxCCA23JTzsy2xKObDTdD7k+2MumTedOOtVisnjzIcATOGidYSCQke0hYovvA4xmUFG/+8iuChWZp5GlLdTbcWyKhRKj09feWD6hfMRdEr3fGXn3ePUttsVOK2QJefHtYbVSmSs27LVfZG3Xgk1I1HQgAhIYAAYrbvMqDqE4f+eFHTTjavx3EgS4fRKAmQeVydKguPpLSbQM+QYPjzynde07hb5BcZEQaVF7+GDz7cAbnvbXKbb9H8GbD49Vkey7BLqywDVb0GBt8zustxX3mdtfDV6bD0jdk+8zyUmgSHD24mfM8AABnjn4RtG3NJ5fWliCDM68JCg9HscZm7166br71hyI5b4Nn1wlul+Gpg5/I9pWms+w0wDPNaPt5GwZMe7z27y2+/VjJ5cbWHj8ly2KIqjLAFYkPebvjxx+6H/L0bQKssI10xXiuFo0nNZO7Ffq1M1AOnQXTsnoOMbTD19Tc/0dJQ6upfKOX3ZTnwWBaiLpFN1cxRc7fBlDQwkPRC4Xp1A2U4Ks5+4bNBpVLP69efy1nU7QPoIJmEuQ2mqL4S2ps8BcBEpIiJphSDHSn+xmu6rTtsMy/nvjRVcJaFNlfvJf6hbIEAAIInTiQ0MTk8PBQAAE6WnmLspnNeXOrSsKn330uqnMVv/gMAAFYtn8eLxtQqy0CrLIMHHxhOS3lvp6opTyqnHESHZ04Z2Lp/P+708iBb77+mRknpvGfOVcCwuwe7HCv99gAAABQe/srl+NHCrbRbifdyX7dZwfgRlIDAE2RHxCa5pD1yaAstAfqcFAmz2/wy4cZMJttOXmHhPSmV89e0aV0a4a5Bd9DeG/IUTM94wbYUyNjJzkZTEbFJLn+zX3kLLBYLp+6LFhcGQGyaqbZJBwAA/fvFs1LxqY9mkxqPwaNOivC4ADH3LUJ58wqOQ1SfZEd+ANt4EV1jP6z0wsjIeGNr6ZdmTmZlnOXS5f9SBufWBrKXFUPBfTFiMTgY28IFEB43FrZsBaGgJn30SMoXf0/yGFKWxdcm4nxqICZ0aLxaRYf7otUChdybTGgGo0RC/dTXqpWkrEtk7/sIn6vw8Jeku+4r16wHAICSIzsZBeOXX8/iSvdoX4mCrnPibsVr7y30+dJdeVY2oZ3N6q/95LOHQqShPKXFO6rsfWhgGem86z+xbd6QfF8ifPfVXka69wAAo8fl+Ey7LKXRp6fIydfgfukuIZuM5/1ReB+wUnm46KkcX0/eiZTp7SFrn76pYGjvIAw8nnv29XDXc+/WBL3ifMdkeIJnvO6LEYCMKmVr/cs5wUTKTRo+FEY+lAIt16/D9k8LGO+e8kFpTzwMyUmJ8P3JX+H7//yKO19wcBCMfepxuKN/PJSdOg/HS77HnffM8+rWhHBJMGcA0W2FkNgV3daHsW68mJcfixkeRoNoIl16JGGKqPUhbYFM+mafr6ZBVkhY1kfX1tlCCjqyF4X3xfQoHhKG6yJjfSjFQHhdmcVidvsepI1bPoY1f3+bdMWsff9dAACYkJ3hM+3GLR+75PGmkhPuLWfuu6vhow3rSOW9Vfvy9rh83p+/h3RZ3mT1UPd0wcNYEO2shKISt1MCX5o1B95cevMBYu47q6HkRLHjz16JfW7r43Lc/l31tWoAAJie8wI89/w0R/qHH3m4SxkOq3n3UJdj9nSYROKSzjm/XcsWL4d5c+e7fO9czoGCfV3OV3KiGOIT4qHkRDGMe3qs49ik7CkuaSZmTfFYbnh4uOP/K1Yth/kLX3V8f7AozytsTQubGH+dECWA8FohPPHQvcOHwZHPjwIAwOLXlzj+3fHpVtu4yah0WLRwiSP9hvWfQMmJYhj9xFPw7KRsR5qlb74BZpMZ0kalO47d+su2H6u8UglbN2+Dte+/2yXdzh3/6nof8XEuZdqvM21UOoSFhXY5X9qodLhWdQ3yD+TDjFnT3Y8H3Ui/ZOkbcOxoMUx/biakjUqHtFHpcPJkKTQ1NcGE7EzYvnUn3P/ACHjiyVGO82aOz4bPdu+ErZu3se66KMdAdoU+OmZCwppt+UTjoV69okGt1nhNf9fgQXCp4jIAAAQEyCAwMAh0Op3H9En3JUHZb7ZRW3mwHPStekhMHArl5ec95lEoFKBSqSA6Ogo0GlulS6VSMJm6TtUICpZDW6sed93IZDIwGo0weMhgqLhY4TieMiIZfvn55uDh/Q+MgJ9+/Nn2i5ZICA+kOucnAs8zn6kzii4aCjkFiEhArS8/Va9d9VYMCm2Z09EMTX1qAhbDhvWhLQbC68rkicNjLDK/JtTMzKgH1qFjEx7aLBDq2nePLjvjvTDD1csVdAXVSMzAc7Gu/RKd56X9sQReKwQAUDV+tFUikaBHIyzBQ7f1YWQciMizsoSiLzCLTKpDCJCNeYw6LuFhxAKRsUT686frtSuXo94Zkd7WM5r61NuxGC7hYRQgohCh4JoZl8UkPIy4MLLuDAXXwoOHcQtE1hJVjU8zSyR+fgiXm7JYzWbdAmLPtpiGhzWAyECEXBp5q8MWPIy7MCruDLk0/sPDqgWiYom6ozUiO4eZTXg4AYgKRB0qpV79co5czOCceUHTlhCGBQkBHlZd2K3uzHC18jLRfAGKWHncoWKQZ02sERs4S5K1Su38BiADzwVlewUX8HBmgeiwRgAAbefK6hrfXiHoF8Pkj1OrH+8v6UW6ATkChzcAUYVIqDESHeu0uIaHNwABAISMTM/sm7ujgHLDHD5Qod+1ezAfoVnxQEPlvBEwgGo5dMwkFB1AdFoju0xGg0k5MZPTzdRr5qhNVLfS5ZvV4TVATIBkV2dLS7vq+Yk9mLzuqy9p2sN6YLSfg2/g8B4gAIAhJ65c9wvqGcz0eSxms7U2ayyhutDM01h9vSaSDunaOlvCV9aF8rWNBDGZiwlrhFfnSlO4axyeWh1nSYUAkP0xCJcgIXDcS1BvLCxPVWDlqQqs+t0FM8UGTU5BwwxsURUmJHgE48K4dG9MuzChASNIF4bHvQnJxQkdGlEBJBSYxASNaAHyBBMAwJBvqtr9AgIC2Di3odNsDFpWEwDdQFLoJrr4WILbwb1Bh8/WyaIUsWTKrG02KW/Lre0NSEhISEhISEhISEhIePV/1JEBceL3zWEAAAAASUVORK5CYII=" alt="">
+        <h1>OWMGS Admin<small>Changes show on the website right away</small></h1>
+        <span class="sp"></span>
+        <a href="index.html" target="_blank" rel="noopener">View site ↗</a>
+        <button type="button" id="logout">Sign out</button>
+      </div>
+      <nav class="tabs" id="tabs" role="tablist"></nav>
+    </div>
+  </header>
+  <main class="wrap" id="main"></main>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="config.js"></script>
+<script>
+function ico(n,c){return `<svg class="ico${c?" "+c:""}" aria-hidden="true"><use href="#i-${n}"/></svg>`;}
+const TAB_ICON={Posts:"news",Gallery:"poster",Apps:"grid",Resources:"book",Leads:"wa",Chat:"chat",Comments:"comment",Ads:"money",Settings:"gear"};
+
+/* ============ STEP: paste your Apps Script Web App URL here (the same one as in index.html) ============ */
+const API_URL = window.OWMGS_API || "https://script.google.com/macros/s/AKfycbzKD-Uvpet9Ku8GKEdZ90rQFaeFVsyHbbauZ1uU1GSmw1qEIVlOMGHzLGdG-JZpJ1t3Pg/exec";   /* the link now lives in config.js */
+/* ====================================================================================================== */
+
+const ICON_NAMES={report:"Report / document",notes:"Pen / notes",quiz:"Phone / quiz",data:"Database",att:"Calendar / attendance",cert:"Award / certificate"};
+const TABS=[
+ {key:"Posts",label:"News & Blog",title:"News & Blog posts",
+  help:"Post GES updates, union news, education news or blog articles. Add a picture, a video and a link if you want.",
+  fields:[
+   {k:"category",l:"Category",t:"select",o:["GES Updates","Teacher Unions","Education News","Blog"]},
+   {k:"place",l:"Where to show it on the website",t:"select",o:["News & Updates","Homepage (top of site)","Apps & Software","Design & Print","Teacher Resources","Contact"],
+    hint:"The post appears at the top of the section you pick. Visitors see a red NEW sign on that menu item."},
+   {k:"title",l:"Title",t:"text",req:1,ph:"e.g. 2026 Promotion Exercise: Results Released"},
+   {k:"text",l:"Text",t:"textarea",ph:"Write the full post here. Press Enter twice for a new paragraph."},
+   {k:"image",l:"Picture",t:"image"},
+   {k:"video",l:"Video",t:"video"},
+   {k:"target",l:"Button takes visitors to",t:"target",hint:"Pick an app or a section: visitors tap the button, the page scrolls there and shows “👇 Tap here” on it."},
+   {k:"link",l:"Web link (only if the button goes to a web link)",t:"file",ph:"https://… (source, circular PDF, form…)"},
+   {k:"linkText",l:"Button text",t:"text",ph:"e.g. Read the circular  /  Try the new app"},
+   {k:"date",l:"Date",t:"date"},
+   {k:"pin",l:"Also show in the orange bar at the top of the site",t:"toggle",def:"NO",hint:"Visitors see “🔔 NEW: your title — Tap here ›” and it takes them straight to this post."},
+   {k:"show",l:"Show on website",t:"toggle"}],
+  sub:r=>`${r.category||""} · ${r.place||"News & Updates"}${String(r.pin).toUpperCase()==="YES"?" · 🔔 top bar":""} · ${fmtDate(r.date)}`},
+ {key:"Gallery",label:"Our Work",title:"Our Work (design gallery)",
+  help:"Show posters, flyers, banners, T‑shirts, invitation cards and videos you have made. They appear under Design & Print on the website.",
+  fields:[
+   {k:"category",l:"Type of work",t:"select",o:["Poster","Flyer","Banner","T-shirt","Invitation Card","Certificate","Branding","Event Coverage","Video","Other"]},
+   {k:"title",l:"Title",t:"text",req:1,ph:"e.g. Speech Day banner – St. Peter's JHS"},
+   {k:"text",l:"Short description",t:"textarea",ph:"Optional"},
+   {k:"image",l:"Picture",t:"image"},
+   {k:"video",l:"Video",t:"video"},
+   {k:"date",l:"Date",t:"date"},
+   {k:"show",l:"Show on website",t:"toggle"}],
+  sub:r=>`${r.category||""} · ${fmtDate(r.date)}`},
+ {key:"Apps",label:"Apps",title:"Apps & Software",
+  help:"The app cards on the website. Once you add one app here, these replace the sample apps.",
+  fields:[
+   {k:"title",l:"App name",t:"text",req:1,ph:"e.g. Smart Report Card Generator"},
+   {k:"platform",l:"Platform",t:"text",ph:"e.g. Web tool, Google Sheets",hint:"Separate with commas."},
+   {k:"forWho",l:"Who it is for",t:"text",ph:"e.g. Teachers, Headteachers"},
+   {k:"features",l:"Features",t:"textarea",ph:"One feature per line",hint:"Put each feature on its own line."},
+   {k:"icon",l:"Icon",t:"select",o:Object.keys(ICON_NAMES),ol:ICON_NAMES},
+   {k:"link",l:"App link (where people use it)",t:"url",ph:"https://… (Netlify, Apps Script /exec, Play Store)",hint:"Leave empty to show “Request demo” instead."},
+   {k:"image",l:"Screenshot",t:"image"},
+   {k:"embed",l:"Show a “Try it here” button",t:"toggle",def:"NO",hint:"Use only for web apps. Not for Android or Play Store links."},
+   {k:"order",l:"Position",t:"number",ph:"1",hint:"1 shows first."},
+   {k:"show",l:"Show on website",t:"toggle"}],
+  sub:r=>`${r.platform||""}${r.link?" · has link":""}`},
+ {key:"Resources",label:"Teacher Links",title:"Teacher resource links",
+  help:"Schemes of work, lesson notes and teaching materials. Paste a Google Drive link, or upload a PDF or Word file.",
+  fields:[
+   {k:"level",l:"Level",t:"select",o:["KG","Basic 1–6","JHS 1–3","SHS"]},
+   {k:"type",l:"Type",t:"select",o:["Scheme of Work","Lesson Notes","Teaching Materials"]},
+   {k:"title",l:"Title teachers see",t:"text",req:1,ph:"e.g. Mathematics – Term 1"},
+   {k:"link",l:"Link or file",t:"file",req:1,ph:"https://drive.google.com/…"},
+   {k:"show",l:"Show on website",t:"toggle"}],
+  sub:r=>`${r.level||""} · ${r.type||""}`},
+ {key:"Leads",label:"WhatsApp",title:"WhatsApp requests",
+  help:"Orders, demo requests and “talk to a person” requests from your WhatsApp assistant. Tap “Chat ↗” to reply from your phone, then “Mark done”.",leads:1},
+ {key:"Chat",label:"Chat",title:"Website chat answers",
+  help:"The chat bubble on your website answers these questions instantly. Each answer shows as a button, and also answers when a visitor types one of its keywords. Until you add answers here, the website uses 6 built‑in ones.",
+  fields:[
+   {k:"question",l:"Button text",t:"text",req:1,ph:"e.g. 💰 Prices",hint:"Short. An emoji at the start looks nice."},
+   {k:"keywords",l:"Keywords (separate with commas)",t:"text",ph:"e.g. price, cost, how much, cedis",hint:"If a visitor types any of these words, this answer is shown."},
+   {k:"answer",l:"Answer",t:"textarea",req:1,ph:"Write the reply the visitor sees.",hint:"You can use {location} {hours} {whatsapp} {phone2} {email}. They are filled in from Settings. Put *stars* around words for bold."},
+   {k:"target",l:"“Show me” button goes to",t:"target",hint:"Optional. The chat shows a “👉 Show me” button that scrolls to this part of the page and points at it."},
+   {k:"order",l:"Position",t:"number",ph:"1",hint:"1 shows first."},
+   {k:"show",l:"Use this answer",t:"toggle"}],
+  sub:r=>`Keywords: ${r.keywords||"—"}`},
+ {key:"Ads",label:"Ads",title:"Adverts on your website",
+  help:"Sell banner spaces to businesses, or paste code from an ad network. Each space shows: your paid banner first, then Google ads (once approved, set in Settings), then ad network code, then an “Advertise here” box.",
+  fields:[
+   {k:"advertiser",l:"Advertiser (business name)",t:"text",req:1,ph:"e.g. Kofi Bookshop"},
+   {k:"slot",l:"Where to show it",t:"select",o:["top","middle","bottom","article","all"],
+    ol:{top:"Top banner (home page, below the heading)",middle:"Middle banner (home page)",bottom:"Bottom banner (home page and downloads)",article:"Inside blog guides",all:"Any free space"}},
+   {k:"kind",l:"Type of advert",t:"select",o:["Banner","Network"],ol:{Banner:"Picture banner (a business paid you)",Network:"Ad network code (Adsterra or similar)"}},
+   {k:"image",l:"Banner picture",t:"image",hint:"Best size: 1200×300 px (wide). 1080×1080 also works for middle and guide spaces."},
+   {k:"link",l:"Where the banner goes when tapped",t:"url",ph:"https://… or https://wa.me/233…",hint:"Their website, Facebook page or WhatsApp link."},
+   {k:"alt",l:"Short description",t:"text",ph:"e.g. Kofi Bookshop: school books and uniforms, Effiduase",hint:"Read aloud for blind visitors and read by Google."},
+   {k:"code",l:"Ad network code (only for “Ad network code” type)",t:"textarea",ph:"Paste the banner code from Adsterra or another network",hint:"Choose banner sizes 320×100, 728×90 or 300×250. Never use pop-under or push ads: they show scams. The code runs in a sealed box and cannot take over your site."},
+   {k:"start",l:"Start date",t:"date0",hint:"Leave empty to start now."},
+   {k:"end",l:"End date",t:"date0",hint:"Leave empty to run until you hide it. The advert stops by itself after this day."},
+   {k:"show",l:"Show this advert",t:"toggle"}],
+  sub:r=>`${{top:"Top",middle:"Middle",bottom:"Bottom",article:"Guides",all:"Any space"}[r.slot]||r.slot||""} · ${r.kind||"Banner"} · 👁 ${Number(r.views)||0} views · 👆 ${Number(r.clicks)||0} clicks${r.end?" · ends "+fmtDate(r.end):""}`},
+ {key:"Comments",label:"Comments",title:"Visitor comments",
+  help:"Hide a comment to remove it from the website but keep it here. Delete removes it for good.",comments:1},
+ {key:"Settings",label:"Settings",title:"Website settings",
+  help:"Contact details, social media links and the homepage heading.",settings:1}
+];
+const CHAT_STARTER=[
+ ["📱 Apps for schools","app, apps, software, report card, quiz, attendance, system, demo, android, apk, computer","We build apps for Ghanaian schools: report card generator, lesson notes app, quiz apps, attendance tracker, staff data system and certificate generator. Tap “Show me” to see them, or ask us for a free demo.","section:apps"],
+ ["🎨 Posters, flyers & banners","poster, flyer, banner, design, t-shirt, tshirt, shirt, invitation, card, certificate, logo, branding, print, printing, funeral, wedding, church, birthday, sticker","We design posters, flyers, banners, T‑shirts, invitation cards, certificates, ID cards and social media flyers. To order, tell us what it is for, the size, how many copies and the date you need it.","section:design"],
+ ["📚 Lesson notes & schemes","lesson, notes, scheme, schemes, teacher, resource, resources, kg, basic, jhs, shs, nacca, worksheet, materials","Schemes of work, lesson notes and teaching materials for KG to SHS are in our Teacher Resource Center. Pick your level to see what is ready.","section:resources"],
+ ["💰 Prices","price, prices, cost, how much, charge, fee, amount, cedis, ghs, ghc, cheap, discount","Prices depend on the item, size, quantity and design work. Tap “Talk to a person” and tell us what you need. We will send you the exact price.",""],
+ ["📰 GES news","news, ges, gnat, nagrat, cct, union, promotion, posting, bece, wassce, free shs, circular","The latest GES updates, teacher union news and education news are on our notice board.","section:news"],
+ ["📍 Location & hours","where, location, address, office, find, map, hours, open, close, closing, opening, time, today, call, phone, number, email, contact","📍 {location}\n🕘 {hours}\n📞 WhatsApp: {whatsapp}","section:contact"]
+].map(c=>[c[0],c[1],c[2].replace(/\\n/g,"\n"),c[3]]);
+const NEWS_MODES={drafts:"Drafts for approval (recommended)",auto:"Fully automatic: goes live at once",off:"Off"};
+const SETTINGS=[
+ {g:"💬 WhatsApp chatbot",f:[
+   {k:"bot_number",l:"Chatbot WhatsApp number",ph:"e.g. 0209067004",hint:"The number connected to Meta for the chatbot. When filled, the green WhatsApp bubble on your website opens the chatbot. Leave empty to keep it on your own number."},
+   {k:"bot_welcome",l:"Welcome message",t:"textarea",ph:"Welcome to *OWMGS* (Owaacs Wood Media, Graphics & Software). We build apps for schools and design everything you print.",hint:"Shown under “Hello <name>! 👋”. Put *stars* around words to make them bold in WhatsApp."},
+   {k:"bot_hours",l:"Opening hours",ph:"Monday – Saturday, 8:00 am – 6:00 pm"}]},
+ {g:"🤖 Auto news (news robot)",news:1,f:[
+   {k:"autonews_mode",l:"Mode",t:"select",o:["drafts","auto","off"],ol:NEWS_MODES,
+    hint:"Drafts: new stories wait in News & Blog as HIDDEN. Tap “Approve” to publish. Fully automatic: they go live straight away."},
+   {k:"autonews_topics",l:"Topics to search (separate with commas)",t:"textarea",
+    ph:"Ghana Education Service, GES teachers Ghana, GNAT teachers, NAGRAT, CCT-GH teachers, BECE Ghana, WASSCE Ghana, Free SHS Ghana, NaCCA curriculum",
+    hint:"Leave empty to use the topics shown in grey. The robot checks every 3 hours and adds up to 5 new stories each time."}]},
+ {g:"Homepage",f:[
+   {k:"announcement",l:"Top announcement bar",ph:"e.g. Admissions flyers: 20% off this month!",hint:"Leave empty to hide the bar."},
+   {k:"hero_title",l:"Big heading",ph:"We build *apps* for schools and design *everything you print*.",hint:"Put *stars* around words to colour them."},
+   {k:"hero_text",l:"Text under the heading",t:"textarea"},
+   {k:"lesson_app_link",l:"Lesson Notes Generator link",t:"url",hint:"Adds a green button in the Teacher Resource Center."}]},
+ {g:"Google AdSense, adverts & downloads",f:[
+   {k:"adsense_client",l:"Google AdSense publisher ID",ph:"ca-pub-8597918905226970",hint:"Leave empty to use the ID already in config.js (ca-pub-8597918905226970). Fill in only if Google gives you a different one."},
+   {k:"adsense_slot_top",l:"AdSense ad unit number: top space",ph:"e.g. 1234567890",hint:"After Google approves you: AdSense → Ads → By ad unit → Display ads → copy the data-ad-slot number. Leave empty to use Auto ads only."},
+   {k:"adsense_slot_middle",l:"AdSense ad unit number: middle space",ph:"e.g. 1234567890"},
+   {k:"adsense_slot_bottom",l:"AdSense ad unit number: bottom space",ph:"e.g. 1234567890"},
+   {k:"adsense_slot_article",l:"AdSense ad unit number: inside guides",ph:"e.g. 1234567890"},
+   {k:"ads_rates",l:"Advertising rates (shown on the Advertise page)",t:"textarea",ph:"e.g. Top banner GH₵ 150/month · Middle GH₵ 100/month · Guides GH₵ 80/month",hint:"Leave empty to say “Ask us on WhatsApp”."},
+   {k:"live_studio_link",l:"OWMGS Live Studio download link",t:"url",ph:"https://drive.google.com/…",hint:"Shown on the Downloads page. Google Drive: Share → Anyone with the link → Copy link."},
+   {k:"live_studio_version",l:"Live Studio version",ph:"3.1.0"}]},
+ {g:"Contact",f:[
+   {k:"whatsapp",l:"WhatsApp number",ph:"0249021637",hint:"All WhatsApp buttons use this number."},
+   {k:"phone2",l:"Second phone",ph:"0209067004"},
+   {k:"email1",l:"Email 1"},{k:"email2",l:"Email 2"},
+   {k:"location",l:"Location (address)",ph:"e.g. Opposite Effiduase Police Station, Sekyere Central"},
+   {k:"map_link",l:"Google Maps link",t:"url",hint:"Google Maps → your place → Share → Copy link."}]},
+ {g:"Social media (leave empty to hide)",f:[
+   {k:"facebook",l:"Facebook",t:"url"},{k:"tiktok",l:"TikTok",t:"url"},{k:"youtube",l:"YouTube",t:"url"},
+   {k:"instagram",l:"Instagram",t:"url"},{k:"x",l:"X (Twitter)",t:"url"},{k:"linkedin",l:"LinkedIn",t:"url"}]}
+];
+
+/* ---------------- helpers ---------------- */
+const $=s=>document.querySelector(s);
+const main=$("#main");
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function fmtDate(d){if(!d)return"";const x=new Date(d);return isNaN(x)?"":x.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});}
+function isoDay(d){const x=d?new Date(d):new Date();if(isNaN(x))return"";const z=new Date(x.getTime()-x.getTimezoneOffset()*60000);return z.toISOString().slice(0,10);}
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,3200);}
+const ERR={wrong_password:"Wrong password.",locked:"Too many wrong tries. Wait 15 minutes, then try again.",
+  change_password:"Change ADMIN_PASSWORD in your Apps Script code first, then deploy a New version.",
+  file_too_big:"That file is too big. The limit is 25 MB. For long videos, upload to YouTube and paste the link.",
+  not_found:"That item was already removed. The list has been refreshed."};
+let PW="";try{PW=sessionStorage.getItem("owmgs_pw")||"";}catch(e){}
+
+async function api(action,payload={}){
+  if(!API_URL.startsWith("https://script.google.com/"))throw new Error("API_URL is not set. Paste your Apps Script link at the top of admin.html.");
+  const res=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(Object.assign({action,password:PW},payload))});
+  let j;try{j=await res.json();}catch(e){throw new Error("The server did not answer properly. Check that the Apps Script is deployed with access: Anyone.");}
+  if(!j.ok){
+    if(j.error==="wrong_password"){logout();}
+    throw new Error(ERR[j.error]||("Error: "+j.error));
+  }
+  return j;
+}
+
+/* ---------------- login ---------------- */
+$("#loginForm").addEventListener("submit",async e=>{
+  e.preventDefault();const b=$("#loginBtn");b.disabled=true;$("#loginErr").textContent="";
+  PW=$("#pw").value;
+  try{await api("login");try{sessionStorage.setItem("owmgs_pw",PW);}catch(e){}start();}
+  catch(err){$("#loginErr").textContent=err.message;}
+  b.disabled=false;
+});
+function logout(){PW="";try{sessionStorage.removeItem("owmgs_pw");}catch(e){}$("#app").hidden=true;$("#loginForm").hidden=false;$("#pw").value="";}
+$("#logout").addEventListener("click",logout);
+
+/* ---------------- tabs ---------------- */
+let cur=TABS[0],rows=[];
+function drawTabs(){
+  $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" aria-selected="${t===cur}" data-tab="${t.key}">${ico(TAB_ICON[t.key]||"grid")}${t.label}</button>`).join("");
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(!b)return;cur=TABS.find(t=>t.key===b.dataset.tab);drawTabs();openTab();});
+function start(){$("#loginForm").hidden=true;$("#app").hidden=false;drawTabs();openTab();}
+
+async function openTab(){
+  window.scrollTo(0,0);
+  main.innerHTML=`<div class="head"><h2>${cur.title}</h2></div><p class="help">${cur.help}</p><div class="empty">Loading…</div>`;
+  try{
+    if(cur.settings){const j=await api("adminList",{tab:"Settings"});LASTNEWS=j.lastNews||null;drawSettings(j.settings||{});return;}
+    const j=await api("adminList",{tab:cur.key});rows=j.rows||[];drawList();
+  }catch(err){main.querySelector(".empty").textContent=err.message;}
+}
+
+/* ---------------- list ---------------- */
+let LASTNEWS=null;
+function newsBox(){
+  const l=LASTNEWS;
+  const last=l?`Last check: ${fmtDate(l.at)} ${new Date(l.at).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}. ${l.added} new ${l.added===1?"story":"stories"}${l.errors?` (${l.errors} topic${l.errors>1?"s":""} could not be searched)`:""}.`:"The robot has not run yet.";
+  return `<div class="up"><button class="btn b-cyan" type="button" data-newsnow>${ico("bot")} Check for news now</button></div><span class="hint" id="newsLast">${esc(last)} Save settings before checking if you changed the mode or topics.</span>`;
+}
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-newsnow]");if(!b)return;
+  b.disabled=true;const old=b.innerHTML;b.textContent="🔎 Searching the news… (up to 30 seconds)";
+  try{
+    const j=await api("newsNow");
+    LASTNEWS={at:new Date().toISOString(),added:j.added,errors:j.errors};
+    const where=j.mode==="auto"?"They are live on the website.":"They are waiting in News & Blog. Tap “Approve” on the ones you want.";
+    toast(j.added?`${j.added} new ${j.added===1?"story":"stories"} added. ${where}`:(j.errors&&j.errors>=j.checked?"Could not reach Google News. Try again later.":"No new stories right now. Try again later."));
+    if(cur.key==="Posts"){const r=await api("adminList",{tab:"Posts"});rows=r.rows||[];drawList();}
+    else{const n=$("#newsLast");if(n)n.textContent=`Last check: just now. ${j.added} new.`;}
+  }catch(err){toast(err.message);}
+  if(b.isConnected){b.disabled=false;b.innerHTML=old;}
+});
+function drawList(q=""){
+  let add=(cur.comments||cur.leads)?"":`<button class="btn b-main" type="button" id="addNew">+ Add new</button>`;
+  if(cur.key==="Posts")add=`<button class="btn b-cyan" type="button" data-newsnow>${ico("bot")} Check for news now</button>`+add;
+  const waiting=cur.key==="Posts"?rows.filter(r=>String(r.auto).toUpperCase()==="YES"&&String(r.show).toUpperCase()==="NO").length:0;
+  const filtered=rows.filter(r=>!q||JSON.stringify(r).toLowerCase().includes(q.toLowerCase()));
+  main.innerHTML=`<div class="head"><h2>${cur.title}</h2>${add}</div><p class="help">${cur.help}</p>
+   ${waiting?`<div class="waiting">${ico("bot")} <b>${waiting} robot ${waiting===1?"story is":"stories are"} waiting for approval.</b> Read each one, then tap <b>Approve ✓</b> to publish it, or <b>Delete</b>.</div>`:""}
+   ${rows.length>5?`<input class="search" id="q" type="search" placeholder="Search…" value="${esc(q)}" aria-label="Search">`:""}
+   ${cur.key==="Chat"&&!rows.length?`<div class="waiting">${ico("chat")} Start quickly: <button class="btn b-cyan" type="button" id="chatStarter">${ico("check")} Add the 6 starter answers</button><br><span class="hint">Then edit them: add your prices, hours and anything customers often ask.</span></div>`:""}
+   <div class="list">${filtered.length?filtered.map(itemHTML).join(""):`<div class="empty">${rows.length?"Nothing matches your search.":(cur.comments?"No comments yet.":cur.leads?"No WhatsApp requests yet. When customers order or ask for a person through your WhatsApp assistant, they appear here.":"Nothing here yet. Tap “+ Add new” to add the first one.")}</div>`}</div>`;
+  const qi=$("#q");if(qi){qi.addEventListener("input",()=>{const v=qi.value;drawList(v);const n=$("#q");n.focus();n.setSelectionRange(v.length,v.length);});}
+  const an=$("#addNew");if(an)an.addEventListener("click",()=>edit({}));
+  const cs=$("#chatStarter");if(cs)cs.addEventListener("click",async()=>{
+    cs.disabled=true;cs.textContent="Adding…";
+    try{for(let i=0;i<CHAT_STARTER.length;i++){const c=CHAT_STARTER[i];const j=await api("save",{tab:"Chat",item:{question:c[0],keywords:c[1],answer:c[2],target:c[3],order:String(i+1),show:"YES"}});rows.push(j.item);}
+      toast("6 answers added. Edit them to fit your business.");drawList();}
+    catch(err){toast(err.message);cs.disabled=false;cs.innerHTML=ico("check")+" Add the 6 starter answers";}
+  });
+}
+function itemHTML(r){
+  const hidden=String(r.show).toUpperCase()==="NO";
+  const robot=String(r.auto).toUpperCase()==="YES";
+  const st=(robot?`<span class="chip c-bot">${ico("bot")} AUTO</span>`:"")+`<span class="chip ${hidden?"c-hid":"c-live"}">${hidden?(robot?"WAITING":"HIDDEN"):"LIVE"}</span>`;
+  if(cur.leads){
+    const num=String(r.number||"").replace(/\D/g,"");
+    return `<div class="item"><div class="thumb">💬</div>
+      <div style="min-width:0"><b>${esc(r.name||("+"+num))}</b><div class="sub"><span class="chip ${hidden?"c-live":"c-hid"}">${hidden?"DONE":"NEW"}</span>${esc(r.type)} · ${fmtDate(r.date)}</div><div class="txt">${esc(r.details||"")} ${num?"· +"+esc(num):""}</div></div>
+      <div class="acts">${num?`<a class="btn b-ok" href="https://wa.me/${esc(num)}" target="_blank" rel="noopener">Chat ↗</a>`:""}<button class="btn b-line" data-toggle="${esc(r.id)}">${hidden?"Reopen":"Mark done"}</button><button class="btn b-red" data-del="${esc(r.id)}">Delete</button></div></div>`;
+  }
+  if(cur.comments){
+    return `<div class="item"><div class="thumb">${"★".repeat(Number(r.rating)||0)||"—"}</div>
+      <div style="min-width:0"><b>${esc(r.name)}</b><div class="sub">${st}${esc(r.about)} · ${fmtDate(r.date)}</div><div class="txt">${esc(r.text)}</div></div>
+      <div class="acts"><button class="btn b-line" data-toggle="${esc(r.id)}">${hidden?"Show":"Hide"}</button><button class="btn b-red" data-del="${esc(r.id)}">Delete</button></div></div>`;
+  }
+  const th=r.image?`<img class="thumb" src="${esc(r.image)}" alt="" loading="lazy" onerror="imgFallback(this)">`:`<div class="thumb">${r.video?"VIDEO":"—"}</div>`;
+  return `<div class="item">${th}
+    <div style="min-width:0"><b>${esc(r.title||r.question||r.advertiser||"(no title)")}</b><div class="sub">${st}${esc(cur.sub(r))}</div></div>
+    <div class="acts">${robot&&/^https?:\/\//i.test(r.link||"")?`<a class="btn b-line" href="${esc(r.link)}" target="_blank" rel="noopener">Read source ↗</a>`:""}${cur.key==="Posts"&&!(robot&&hidden)?`<button class="btn b-line" data-link="${esc(r.id)}">${ico("link")} Link</button>`:""}<button class="btn b-cyan" data-edit="${esc(r.id)}">Edit</button><button class="btn ${hidden&&robot?"b-ok":"b-line"}" data-toggle="${esc(r.id)}">${hidden?(robot?"Approve ✓":"Show"):"Hide"}</button><button class="btn b-red" data-del="${esc(r.id)}">Delete</button></div></div>`;
+}
+function imgFallback(img){const m=img.src.match(/lh3\.googleusercontent\.com\/d\/([\w-]+)/);if(m&&!img.dataset.fb){img.dataset.fb=1;img.src="https://drive.google.com/thumbnail?id="+m[1]+"&sz=w600";}}
+
+function postLink(id){return new URL("./",location.href).href+"#p-"+String(id).replace(/[^\w-]/g,"");}
+async function copyText(t){try{await navigator.clipboard.writeText(t);toast("Link copied. Paste it in WhatsApp or Facebook.");}catch(e){prompt("Copy this link:",t);}}
+main.addEventListener("click",async e=>{
+  const lk=e.target.closest("[data-link]");
+  if(lk){copyText(postLink(lk.dataset.link));return;}
+  const cp=e.target.closest("[data-copylink]");
+  if(cp){copyText(cp.dataset.copylink);return;}
+  const ed=e.target.closest("[data-edit]");
+  if(ed){edit(rows.find(r=>String(r.id)===ed.dataset.edit)||{});return;}
+  const tg=e.target.closest("[data-toggle]");
+  if(tg){const r=rows.find(x=>String(x.id)===tg.dataset.toggle);if(!r)return;tg.disabled=true;
+    const show=String(r.show).toUpperCase()==="NO"?"YES":"NO";
+    try{await api("save",{tab:cur.key,item:{id:r.id,show}});r.show=show;toast(show==="YES"?"Now showing on the website":"Hidden from the website");drawList(($("#q")||{}).value||"");}
+    catch(err){toast(err.message);tg.disabled=false;}return;}
+  const dl=e.target.closest("[data-del]");
+  if(dl){
+    if(dl.dataset.sure!=="1"){dl.dataset.sure="1";dl.textContent="Tap again to delete";setTimeout(()=>{if(dl.isConnected){dl.dataset.sure="";dl.textContent="Delete";}},4000);return;}
+    dl.disabled=true;
+    try{await api("delete",{tab:cur.key,id:dl.dataset.del});rows=rows.filter(x=>String(x.id)!==dl.dataset.del);toast("Deleted");drawList(($("#q")||{}).value||"");}
+    catch(err){toast(err.message);openTab();}
+  }
+});
+
+/* ---------------- editor ---------------- */
+function fieldHTML(f,v){
+  const id="f_"+f.k, val=v??"";
+  const hint=f.hint?`<span class="hint">${f.hint}</span>`:"";
+  switch(f.t){
+    case "select": return `<div class="field"><label for="${id}">${f.l}</label><select id="${id}">${f.o.map(o=>`<option value="${esc(o)}" ${o===val?"selected":""}>${esc(f.ol?f.ol[o]:o)}</option>`).join("")}</select>${hint}</div>`;
+    case "textarea": return `<div class="field"><label for="${id}">${f.l}</label><textarea id="${id}" placeholder="${esc(f.ph||"")}">${esc(val)}</textarea>${hint}</div>`;
+    case "toggle": {const on=String(val||f.def||"YES").toUpperCase()!=="NO";return `<label class="toggle"><input type="checkbox" id="${id}" ${on?"checked":""}> ${f.l}</label>${hint}`;}
+    case "date0": return `<div class="field"><label for="${id}">${f.l}</label><input type="date" id="${id}" value="${val?isoDay(val):""}">${hint}</div>`;
+    case "date": return `<div class="field"><label for="${id}">${f.l}</label><input type="date" id="${id}" value="${isoDay(val)}"></div>`;
+    case "number": return `<div class="field"><label for="${id}">${f.l}</label><input type="number" id="${id}" min="1" value="${esc(val)}" placeholder="${esc(f.ph||"")}">${hint}</div>`;
+    case "image": return `<div class="field"><span class="lbl">${f.l}</span><div class="media">
+        <div class="prev" id="${id}_prev">${val?`<img src="${esc(val)}" alt="" onerror="imgFallback(this)">`:"No picture yet"}</div>
+        <div style="display:grid;gap:10px;min-width:0">
+          <div class="up"><label class="btn b-cyan" for="${id}_file">Upload picture</label><input type="file" id="${id}_file" accept="image/*" data-up="${f.k}" data-kind="image">
+          ${val?`<button type="button" class="btn b-line" data-clear="${f.k}">Remove</button>`:""}<span class="prog" id="${id}_prog"></span></div>
+          <input type="url" id="${id}" value="${esc(val)}" placeholder="…or paste a picture link" aria-label="${f.l} link">
+          <span class="hint">Pictures are made smaller automatically so the site loads fast on phone data.</span></div></div></div>`;
+    case "video": return `<div class="field"><label for="${id}">${f.l}</label>
+        <input type="url" id="${id}" value="${esc(val)}" placeholder="Paste a YouTube, Facebook or TikTok link">
+        <div class="up"><label class="btn b-line" for="${id}_file">…or upload a video file</label><input type="file" id="${id}_file" accept="video/*" data-up="${f.k}" data-kind="video"><span class="prog" id="${id}_prog"></span></div>
+        <span class="hint">Best: upload long videos to YouTube and paste the link. Direct uploads are limited to 25 MB (about 1 minute).</span></div>`;
+    case "file": return `<div class="field"><label for="${id}">${f.l}</label>
+        <input type="url" id="${id}" value="${esc(val)}" placeholder="${esc(f.ph||"https://…")}">
+        <div class="up"><label class="btn b-line" for="${id}_file">…or upload a file (PDF, Word, Excel)</label><input type="file" id="${id}_file" data-up="${f.k}" data-kind="file"><span class="prog" id="${id}_prog"></span></div>
+        <span class="hint">Google Drive links: Share → “Anyone with the link” → Copy link.</span></div>`;
+    case "target": {
+      const opts=[["","A web link (type it below), or no button"],["section:apps","Apps & Software section"],["section:design","Design & Print section"],["section:resources","Teacher Resources section"],["section:news","News & Updates section"],["section:comments","Comments section"],["section:contact","Contact section"]]
+        .concat((APP_LIST||[]).map(a=>["app:"+a.id,"App: "+a.title]));
+      if(val&&!opts.some(o=>o[0]===val))opts.push([val,"(removed item)"]);
+      return `<div class="field"><label for="${id}">${f.l}</label><select id="${id}">${opts.map(o=>`<option value="${esc(o[0])}" ${o[0]===val?"selected":""}>${esc(o[1])}</option>`).join("")}</select>${hint}</div>`;}
+    default: return `<div class="field"><label for="${id}">${f.l}</label><input type="${f.t==="url"?"url":"text"}" id="${id}" value="${esc(val)}" placeholder="${esc(f.ph||"")}">${hint}</div>`;
+  }
+}
+let editing=null,APP_LIST=null;
+async function edit(r){
+  if((cur.key==="Posts"||cur.key==="Chat")&&!APP_LIST){try{const j=await api("adminList",{tab:"Apps"});APP_LIST=(j.rows||[]).filter(a=>String(a.show).toUpperCase()!=="NO").map(a=>({id:String(a.id),title:a.title,image:a.image}));}catch(e){APP_LIST=[];}}
+  editing=r;window.scrollTo(0,0);
+  const isNew=!r.id;
+  main.innerHTML=`<div class="head"><h2>${isNew?"Add new":"Edit"} · ${cur.label}</h2><button class="btn b-line" type="button" id="back">← Back to list</button></div>
+   <form class="editor" id="ed" novalidate>${cur.fields.map(f=>fieldHTML(f,r[f.k])).join("")}
+   <div class="foot"><button class="btn b-main" type="submit" id="saveBtn">${isNew?"Publish":"Save changes"}</button><button class="btn b-line" type="button" id="cancel">Cancel</button></div></form>`;
+  $("#back").onclick=$("#cancel").onclick=()=>drawList();
+  $("#ed").addEventListener("submit",save);
+  main.querySelectorAll("[data-up]").forEach(inp=>inp.addEventListener("change",()=>uploadField(inp)));
+  main.querySelectorAll("[data-clear]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.clear;$("#f_"+k).value="";$("#f_"+k+"_prev").textContent="No picture yet";b.remove();}));
+  cur.fields.filter(f=>f.t==="image").forEach(f=>$("#f_"+f.k).addEventListener("change",e=>{const v=e.target.value.trim();$("#f_"+f.k+"_prev").innerHTML=v?`<img src="${esc(v)}" alt="" onerror="imgFallback(this)">`:"No picture yet";}));
+}
+let uploading=0;
+async function uploadField(inp){
+  const file=inp.files[0];if(!file)return;
+  const k=inp.dataset.up,kind=inp.dataset.kind,prog=$("#f_"+k+"_prog");
+  try{
+    uploading++;prog.textContent="Preparing…";
+    let blob=file,name=file.name;
+    if(kind==="image"&&/^image\/(jpeg|png|webp|heic|heif|bmp)/.test(file.type)){blob=await shrink(file);name=name.replace(/\.\w+$/,"")+".jpg";}
+    if(blob.size>25*1024*1024)throw new Error(ERR.file_too_big);
+    prog.textContent=`Uploading ${(blob.size/1048576).toFixed(1)} MB…`;
+    const data=await toB64(blob);
+    const j=await api("upload",{name,type:blob.type||file.type||"application/octet-stream",data});
+    $("#f_"+k).value=j.url;
+    if(kind==="image")$("#f_"+k+"_prev").innerHTML=`<img src="${esc(j.url)}" alt="" onerror="imgFallback(this)">`;
+    prog.textContent="Uploaded ✓";
+  }catch(err){prog.textContent="";toast(err.message);}
+  finally{uploading--;inp.value="";}
+}
+function toB64(blob){return new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(String(fr.result).split(",")[1]);fr.onerror=()=>no(new Error("Could not read the file."));fr.readAsDataURL(blob);});}
+function shrink(file){
+  return new Promise(ok=>{
+    const url=URL.createObjectURL(file),img=new Image();
+    img.onload=()=>{const max=1600;let w=img.naturalWidth,h=img.naturalHeight;const s=Math.min(1,max/Math.max(w,h));w=Math.round(w*s);h=Math.round(h*s);
+      const c=document.createElement("canvas");c.width=w;c.height=h;const x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.drawImage(img,0,0,w,h);
+      c.toBlob(b=>{URL.revokeObjectURL(url);ok(b&&b.size<file.size?b:file);},"image/jpeg",0.82);};
+    img.onerror=()=>{URL.revokeObjectURL(url);ok(file);};
+    img.src=url;
+  });
+}
+/* After publishing: ask the public feed (what visitors get) whether the post is in it */
+async function liveCheck(id){
+  const el=$("#liveCheck");if(!el)return;
+  try{
+    const res=await fetch(API_URL+"?action=content&t="+Date.now(),{cache:"no-store"});
+    const j=await res.json();
+    const found=(j.posts||[]).some(p=>String(p.id)===String(id));
+    if(found){el.className="live ok";el.innerHTML="✓ Checked: the public website feed has this post. If your site still doesn’t show it: (1) make sure <b>API_URL in index.html</b> is the same link as in admin.html, and (2) close the website tab and open it again (phones keep an old copy).";}
+    else{el.className="live bad";el.innerHTML="⚠ Saved in your Google Sheet, but the public feed does not include it yet. This usually means Code.gs was changed without publishing: in Apps Script go to <b>Deploy → Manage deployments → ✏ → Version: New version → Deploy</b>.";}
+  }catch(e){el.className="live bad";el.textContent="⚠ Could not reach the public feed. Check the deployment has “Who has access: Anyone”.";}
+}
+async function save(e){
+  e.preventDefault();
+  if(uploading){toast("Please wait for the upload to finish.");return;}
+  const item={id:editing.id||""};
+  for(const f of cur.fields){
+    const el=$("#f_"+f.k);
+    let v=f.t==="toggle"?(el.checked?"YES":"NO"):el.value.trim();
+    if(f.req&&!v){toast(`Please fill in “${f.l}”.`);el.focus();return;}
+    if((f.t==="url"||f.t==="file"||f.t==="image"||f.t==="video")&&v&&!/^https?:\/\//i.test(v)){toast(`“${f.l}” must start with https://`);el.focus();return;}
+    if((f.t==="date"||f.t==="date0")&&v)v=new Date(v+"T12:00:00").toISOString();
+    item[f.k]=v;
+  }
+  const b=$("#saveBtn");b.disabled=true;b.textContent="Saving…";
+  try{
+    const j=await api("save",{tab:cur.key,item});
+    const i=rows.findIndex(r=>String(r.id)===String(j.item.id));
+    if(i>=0)rows[i]=j.item;else rows.unshift(j.item);
+    toast(item.show==="NO"?"Saved (hidden from website)":"Saved. It's live on the website.");drawList();
+    if(cur.key==="Posts"&&item.show!=="NO"){
+      const url=postLink(j.item.id);
+      const app=String(j.item.target||"").startsWith("app:")?(APP_LIST||[]).find(a=>"app:"+a.id===j.item.target):null;
+      const pic=j.item.image||(app&&app.image)||"";
+      main.insertAdjacentHTML("afterbegin",`<div class="done">${pic?`<img class="done-img" src="${esc(pic)}" alt="" onerror="imgFallback(this)">`:""}<p style="margin:0"><b>${ico("check")} Published</b> in <b>${esc(j.item.place||"News & Updates")}</b>${String(j.item.pin).toUpperCase()==="YES"?" and the orange top bar":""}.</p>
+        <div class="up"><a class="btn b-cyan" href="${esc(url)}" target="_blank" rel="noopener">See it on the website ↗</a><button class="btn b-line" type="button" data-copylink="${esc(url)}">${ico("link")} Copy link to share</button></div>
+        <span class="hint">The link opens your site, scrolls to this post and shows a “Tap here” pointer.</span>
+        <span class="live" id="liveCheck">Checking that visitors can see it…</span></div>`);
+      liveCheck(j.item.id);
+      window.scrollTo(0,0);
+    }
+  }catch(err){toast(err.message);b.disabled=false;b.textContent="Try again";}
+}
+
+/* ---------------- settings ---------------- */
+function drawSettings(s){
+  main.innerHTML=`<div class="head"><h2>${cur.title}</h2></div><p class="help">${cur.help}</p>
+   <form class="editor" id="setForm" novalidate>
+   ${SETTINGS.map((g,i)=>`<div class="${i?"group":""}" style="display:grid;gap:14px"><h3>${g.g}</h3>${g.f.map(f=>fieldHTML({...f,t:f.t||"text"},s[f.k])).join("")}${g.news?newsBox():""}</div>`).join("")}
+   <div class="foot"><button class="btn b-main" type="submit" id="setSave">Save settings</button></div></form>`;
+  $("#setForm").addEventListener("submit",async e=>{
+    e.preventDefault();const values={};
+    for(const g of SETTINGS)for(const f of g.f){const v=$("#f_"+f.k).value.trim();
+      if(f.t==="url"&&v&&!/^https?:\/\//i.test(v)){toast(`“${f.l}” must start with https://`);$("#f_"+f.k).focus();return;}
+      values[f.k]=v;}
+    const b=$("#setSave");b.disabled=true;b.textContent="Saving…";
+    try{await api("settingsSave",{values});toast("Settings saved. Refresh the website to see them.");}
+    catch(err){toast(err.message);}
+    b.disabled=false;b.textContent="Save settings";
+  });
+}
+
+/* ---------------- boot ---------------- */
+if(!API_URL.startsWith("https://script.google.com/")){
+  $("#loginErr").textContent="Setup needed: paste your Apps Script link into API_URL at the top of admin.html.";
+}else if(PW){api("login").then(start).catch(()=>logout());}
+</script>
+</body>
+</html>

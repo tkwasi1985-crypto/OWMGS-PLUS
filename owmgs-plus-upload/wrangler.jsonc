@@ -1,0 +1,15 @@
+{
+  // OWMGS website on Cloudflare Workers.
+  // Cloudflare reads this file when it runs "npx wrangler deploy".
+  "name": "owmgs-plus",
+  "main": "worker.js",                       // the WhatsApp chatbot + safety settings
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",                 // all your web pages, pictures and files
+    "binding": "ASSETS",
+    "html_handling": "none",                 // keep page addresses exactly as written (about.html), no redirects
+    "run_worker_first": ["/api/*", "/apps-script/*", "/Code.gs"]
+  },
+  "keep_vars": true,                         // keep the WhatsApp secrets you add in the dashboard
+  "observability": { "enabled": true }      // lets you see chatbot logs in the dashboard
+}

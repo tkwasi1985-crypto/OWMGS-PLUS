@@ -1,0 +1,80 @@
+/* OWMGS sub-pages (About, Privacy, Terms, Advertise, Downloads, Blog, Guides).
+   Same brand as the home page: navy, cyan, orange, green; Bricolage Grotesque + Figtree. */
+:root{
+  --bg:#f5f7fa;--surface:#fff;--ink:#0d1b33;--muted:#53627a;--line:#dbe2ec;
+  --navy:#0e1f3d;--navy-ink:#eef3fb;--cyan:#0a8fbb;--orange:#e2700f;--green:#2f9c63;--cyan-soft:#e3f5fb;--orange-soft:#fdeedd;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#08111f;--surface:#101c31;--ink:#e8eef8;--muted:#9aaac2;--line:#22324d;--navy:#050c18;
+  --cyan:#3cc3ee;--orange:#ff9a45;--green:#5fd394;--cyan-soft:#0f2b3c;--orange-soft:#33220f;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65}
+[hidden]{display:none!important}
+img{max-width:100%}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.ico{width:1.1em;height:1.1em;fill:currentColor;vertical-align:-.18em;flex:none}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px}
+.top{background:var(--navy);color:var(--navy-ink);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;gap:14px;padding-block:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none}
+.brand img{width:42px;height:42px}
+.brand b{font-family:var(--display);font-size:20px;display:block;line-height:1.1}
+.brand small{font-size:11px;opacity:.75}
+.top nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.top nav a{color:var(--navy-ink);text-decoration:none;font-weight:600;font-size:14.5px;padding:8px 12px;border-radius:999px;opacity:.88}
+.top nav a:hover,.top nav a[aria-current]{background:rgba(255,255,255,.12);opacity:1}
+@media (max-width:640px){.top nav{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap}.top nav a{white-space:nowrap}}
+.hero{background:var(--navy);color:var(--navy-ink);padding-block:44px 52px}
+.hero .eyebrow{font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#ffb36b;margin:0 0 10px}
+.hero h1{font-family:var(--display);font-size:clamp(32px,5.5vw,52px);line-height:1.05;margin:0;text-wrap:balance;max-width:24ch}
+.hero p{color:rgba(238,243,251,.8);max-width:62ch;margin:14px 0 0;font-size:18px}
+main.doc{padding-block:36px 56px}
+.doc .body{max-width:72ch}
+.doc h2{font-family:var(--display);font-size:clamp(24px,3.4vw,30px);line-height:1.15;margin:36px 0 10px}
+.doc h3{font-family:var(--display);font-size:21px;margin:26px 0 6px}
+.doc p,.doc li{max-width:72ch}
+.doc ul,.doc ol{padding-left:22px}
+.doc li{margin:6px 0}
+.note{background:var(--cyan-soft);border-left:5px solid var(--cyan);padding:14px 18px;border-radius:8px;margin:20px 0}
+.warn{background:var(--orange-soft);border-left:5px solid var(--orange);padding:14px 18px;border-radius:8px;margin:20px 0}
+.meta{color:var(--muted);font-size:14.5px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;
+  padding:13px 22px;border-radius:999px;min-height:48px}
+.btn-wa{background:#25d366;color:#062b14}.btn-or{background:var(--orange);color:#1b0e02}.btn-cy{background:var(--cyan);color:#021620}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:18px;margin:20px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{margin:0;font-family:var(--display);font-size:20px;line-height:1.2}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--cyan)}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card .tag{align-self:flex-start;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:6px;background:var(--orange-soft);color:var(--orange)}
+.card .more{margin-top:auto;font-weight:800;text-decoration:none}
+.tile{width:54px;height:54px;display:grid;place-items:center;color:#fff;background:var(--cyan);flex:none}
+.tile .ico{width:28px;height:28px}
+.tile.o{background:var(--orange)}.tile.g{background:var(--green)}.tile.n{background:#2a4a85}
+.spaces{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:16px;margin:18px 0}
+.space{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:16px}
+.space b{font-family:var(--display);font-size:18px;display:block}
+.space .size{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--muted)}
+.dl{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin:20px 0}
+.dl .tile{width:72px;height:72px}.dl .tile .ico{width:38px;height:38px}
+.dl > div:not(.tile){flex:1;min-width:240px}
+.dl h2{margin:0 0 4px}
+article.post .lead{font-size:19px;color:var(--muted)}
+article.post figure{margin:20px 0}
+article.post img{border-radius:12px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+footer.foot{background:var(--navy);color:rgba(238,243,251,.8);padding-block:30px;font-size:14.5px;margin-top:20px}
+footer.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:space-between}
+footer.foot nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+footer.foot a{color:var(--navy-ink);text-decoration:none;font-weight:600}
+footer.foot a:hover{text-decoration:underline}
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25d366;
+  display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:30;color:#fff}
+.wa-float .ico{width:30px;height:30px}
+@media (max-width:600px){body{font-size:16.5px}footer.foot{padding-bottom:90px}}
