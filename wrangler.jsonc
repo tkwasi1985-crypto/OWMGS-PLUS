@@ -1,0 +1,15 @@
+{
+  // OWMGS website on Cloudflare (Worker "owmgs-plus").
+  // This file sits at the TOP of the GitHub repository and points to the website folder.
+  "name": "owmgs-plus",
+  "main": "owmgs-plus-upload/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./owmgs-plus-upload/public",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "run_worker_first": ["/api/*", "/apps-script/*", "/Code.gs"]
+  },
+  "keep_vars": true,
+  "observability": { "enabled": true }
+}
